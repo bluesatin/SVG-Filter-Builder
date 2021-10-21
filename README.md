@@ -2,7 +2,7 @@
 A web-app for building and adjusting SVG Filters with some workflow improvements.
 
 ## How to Use
-To use the web-app, there is a built version on GitHub pages: [GitHub.io - SVG-Filter-Builder](https://bluesatin.github.io/svg-filter-builder/)
+To use the web-app, there is a built version on GitHub pages: [GitHub.io - SVG-Filter-Builder](https://bluesatin.github.io/SVG-Filter-Builder/)
 
 ## Features
 + Ability to add/remove/modify SVG elements

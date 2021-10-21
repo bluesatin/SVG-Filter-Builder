@@ -2,7 +2,7 @@
   "name": "svg-filter-builder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bluesatin.github.io/svg-filter-builder/",
+  "homepage": "https://bluesatin.github.io/svg-filter-builder",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@testing-library/jest-dom": "^5.13.0",

@@ -1,0 +1,60 @@
+{
+    "animation-elements" : {
+        "animate" : {
+            "element" : "animate",
+            "attributes" : {
+                "timing" : [
+                    "begin", "dur", "end",
+                    "min", "max",
+                    "restart",
+                    "repeatCount",
+                    "repeatDur",
+                    "fill"
+                ],
+                "value" : [
+                    "calcMode",
+                    "values",
+                    "keyTimes",
+                    "keySplines",
+                    "from",
+                    "to",
+                    "by"
+                ],
+                "other" : [
+                    "attributeName",
+                    "additive",
+                    "accumulate"
+                ],
+                "event" : [
+                    "onbegin",
+                    "onend",
+                    "onrepeat"
+                ]
+            }
+        },
+        "set" : {
+            "element" : "set",
+            "attributes" : {
+                "base" : [
+                    "to"
+                ],
+                "timing" : [
+                    "begin", "dur", "end",
+                    "min", "max",
+                    "restart",
+                    "repeatCount",
+                    "repeatDur",
+                    "fill"
+                ],
+                "other" : [
+                    "attributeName",
+                ],
+                "event" : [
+                    "onbegin",
+                    "onend",
+                    "onrepeat"
+                ]
+            }
+        }
+    }
+}

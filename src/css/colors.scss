@@ -1,0 +1,41 @@
+// ┌──────────┐
+// │  Import  │
+// ╘══════════╛
+@import "sass-material-colors";
+// ┌──────────────────┐
+// │  Theme Settings  │
+// ╘══════════════════╛
+$neutral: "grey";
+$color1: "yellow";
+$color2: "blue";
+// ┌──────────────────┐
+// │  Neutral Colors  │
+// ╘══════════════════╛
+// Neutral - Light
+$light: material-color($neutral, "100");
+$light-high: material-color($neutral, "50");
+$light-low: material-color($neutral, "200");
+// Neutral - Mid
+$mid: material-color($neutral, "500");
+$mid-high: material-color($neutral, "600");
+$mid-low: material-color($neutral, "400");
+// Neutral - Dark
+$dark: material-color($neutral, "900");
+$dark-high: material-color($neutral, "800");
+$dark-low: hsl(0,0%,0%);
+// ┌───────────────┐
+// │  Main Colors  │
+// ╘═══════════════╛
+// Primary Color
+$primary: material-color($color1, "500");
+$primary-back: material-color($color1, "500");
+$primary-high: material-color($color1, "300");
+$primary-low: material-color($color1, "700");
+// Secondary Color
+$secondary: material-color($color2, "500");
+$secondary-back: material-color($color2, "500");
+$secondary-high: material-color($color2, "300");
+$secondary-low: material-color($color2, "700");
+// ┌───────────────────┐
+// │  Secondary Color  │
+// ╘═══════════════════╛

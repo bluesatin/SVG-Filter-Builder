@@ -1,0 +1,444 @@
+{
+    "filter": {
+        "type": "filter",
+        "shorthand": "filter",
+        "attributes": {
+            "id": { "name": "id", "value": "new-filter" },
+            "width": { "name": "width", "value": "120%" },
+            "height": { "name": "height", "value": "120%" },
+            "x": { "name": "x", "value": "-10%" },
+            "y": { "name": "y", "value": "-10%" },
+            "color-interpolation-filters": {
+                "name": "color-interpolation-filters",
+                "value": null
+            }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_Filters_Tutorial"
+    },
+    "feBlend": {
+        "type": "feBlend",
+        "shorthand": "blend",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "in2": { "name": "in2", "value": null },
+            "mode": { "name": "mode", "value": "normal" },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null },
+            "color-interpolation-filters": {
+                "name": "color-interpolation-filters",
+                "value": "sRGB"
+            }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feBlend"
+    },
+    "feColorMatrix": {
+        "type": "feColorMatrix",
+        "shorthand": "color",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "type": { "name": "type", "value": null },
+            "values": { "name": "values", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix"
+    },
+    "feComponentTransfer": {
+        "type": "feComponentTransfer",
+        "shorthand": "transfer",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "childElements": [
+            {
+                "type" : "feFuncR",
+                "shorthand": "funcR",
+                "attributes" : {
+                    "type": { "name": "type", "value": "identity" },
+                    "tableValues": { "name": "tableValues", "value": null },
+                    "slope": { "name": "slope", "value": null },
+                    "intercept": { "name": "intercept", "value": null },
+                    "amplitude": { "name": "amplitude", "value": null },
+                    "exponent": { "name": "exponent", "value": null },
+                    "offset": { "name": "offset", "value": null }
+                },
+                "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR"
+            },
+            {
+                "type" : "feFuncG",
+                "shorthand": "funcG",
+                "attributes" : {
+                    "type": { "name": "type", "value": "identity" },
+                    "tableValues": { "name": "tableValues", "value": null },
+                    "slope": { "name": "slope", "value": null },
+                    "intercept": { "name": "intercept", "value": null },
+                    "amplitude": { "name": "amplitude", "value": null },
+                    "exponent": { "name": "exponent", "value": null },
+                    "offset": { "name": "offset", "value": null }
+                },
+                "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG"
+            },
+            {
+                "type" : "feFuncB",
+                "shorthand": "funcB",
+                "attributes" : {
+                    "type": { "name": "type", "value": "identity" },
+                    "tableValues": { "name": "tableValues", "value": null },
+                    "slope": { "name": "slope", "value": null },
+                    "intercept": { "name": "intercept", "value": null },
+                    "amplitude": { "name": "amplitude", "value": null },
+                    "exponent": { "name": "exponent", "value": null },
+                    "offset": { "name": "offset", "value": null }
+                },
+                "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB"
+            },
+            {
+                "type" : "feFuncA",
+                "shorthand": "funcA",
+                "attributes" : {
+                    "type": { "name": "type", "value": "identity" },
+                    "tableValues": { "name": "tableValues", "value": null },
+                    "slope": { "name": "slope", "value": null },
+                    "intercept": { "name": "intercept", "value": null },
+                    "amplitude": { "name": "amplitude", "value": null },
+                    "exponent": { "name": "exponent", "value": null },
+                    "offset": { "name": "offset", "value": null }
+                },
+                "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA"
+            }
+        ],
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComponentTransfer"
+    },
+    "feComposite": {
+        "type": "feComposite",
+        "shorthand": "composite",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "in2": { "name": "in2", "value": null },
+            "operator": { "name": "operator", "value": "over" },
+            "k1": { "name": "k1", "value": null },
+            "k2": { "name": "k2", "value": null },
+            "k3": { "name": "k3", "value": null },
+            "k4": { "name": "k4", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null },
+            "color-interpolation-filters": {
+                "name": "color-interpolation-filters",
+                "value": "sRGB"
+            }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComposite"
+    },
+    "feConvolveMatrix": {
+        "type": "feConvolveMatrix",
+        "shorthand": "kernel",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "order": { "name": "order", "value": 3 },
+            "kernelMatrix": { "name": "kernelMatrix", "value": "0 0 0\n0 1 0\n0 0 0" },
+            "divisor": { "name": "divisor", "value": null },
+            "bias": { "name": "bias", "value": null },
+            "targetX": { "name": "targetX", "value": null },
+            "targetY": { "name": "targetY", "value": null },
+            "edgeMode": { "name": "edgeMode", "value": null },
+            "preserveAlpha": { "name": "preserveAlpha", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feConvolveMatrix"
+    },
+    "feDiffuseLighting": {
+        "type": "feDiffuseLighting",
+        "shorthand": "diffuse",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "surfaceScale": { "name": "surfaceScale", "value": 1 },
+            "diffuseConstant": { "name": "diffuseConstant", "value": 1 },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDiffuseLighting"
+    },
+    "feDisplacementMap": {
+        "type": "feDisplacementMap",
+        "shorthand": "displace",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "in2": { "name": "in2", "value": null },
+            "scale": { "name": "scale", "value": 1 },
+            "xChannelSelector": { "name": "xChannelSelector", "value": null },
+            "yChannelSelector": { "name": "yChannelSelector", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDisplacementMap"
+    },
+    "feDropShadow": {
+        "type": "feDropShadow",
+        "shorthand": "shadow",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "dx": { "name": "dx", "value": 5 },
+            "dy": { "name": "dy", "value": 5 },
+            "stdDeviation": { "name": "stdDeviation", "value": 1 },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDropShadow"
+    },
+    "feFlood": {
+        "type": "feFlood",
+        "shorthand": "flood",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "flood-color": { "name": "flood-color", "value": "#808080" },
+            "flood-opacity": { "name": "flood-opacity", "value": 1 },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFlood"
+    },
+    "feGaussianBlur": {
+        "type": "feGaussianBlur",
+        "shorthand": "blur",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "stdDeviation": { "name": "stdDeviation", "value": 1 },
+            "edgeMode": { "name": "edgeMode", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feGaussianBlur"
+    },
+    "feImage": {
+        "type": "feImage",
+        "shorthand": "image",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "href": { "name": "href", "value": null },
+            "preserveAspectRatio": { "name": "preserveAspectRatio", "value": "xMidYMid meet" },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage"
+    },
+    "feMerge": {
+        "type": "feMerge",
+        "shorthand": "merge",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMerge"
+    },
+    "feMorphology": {
+        "type": "feMorphology",
+        "shorthand": "morph",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "operator": { "name": "operator", "value": "erode" },
+            "radius": { "name": "radius", "value": 1 },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMorphology"
+    },
+    "feOffset": {
+        "type": "feOffset",
+        "shorthand": "offset",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "dx": { "name": "dx", "value": 5 },
+            "dy": { "name": "dy", "value": 5 },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feOffset"
+    },
+    "feSpecularLighting": {
+        "type": "feSpecularLighting",
+        "shorthand": "specular",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "surfaceScale": { "name": "surfaceScale", "value": 1 },
+            "specularConstant": { "name": "specularConstant", "value": 1 },
+            "specularExponent": { "name": "specularExponent", "value": 1 },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpecularLighting"
+    },
+    "feTile": {
+        "type": "feTile",
+        "shorthand": "tile",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "in": { "name": "in", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile"
+    },
+    "feTurbulence": {
+        "type": "feTurbulence",
+        "shorthand": "noise",
+        "attributes": {
+            "result": { "name": "result", "value": null },
+            "type": { "name": "type", "value": "turbulence" },
+            "baseFrequency": { "name": "baseFrequency", "value": 0.1 },
+            "numOctaves": { "name": "numOctaves", "value": 3 },
+            "seed": { "name": "seed", "value": 1 },
+            "stitchTiles": { "name": "stitchTiles", "value": null },
+            "width": { "name": "width", "value": null },
+            "height": { "name": "height", "value": null },
+            "x": { "name": "x", "value": null },
+            "y": { "name": "y", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence"
+    },
+    "feDistantLight": {
+        "type": "feDistantLight",
+        "shorthand": "light",
+        "attributes" : {
+            "azimuth": { "name": "azimuth", "value": 270 },
+            "elevation": { "name": "elevation", "value": 45 }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDistantLight"
+    },
+    "fePointLight": {
+        "type" : "fePointLight",
+        "shorthand": "light",
+        "attributes" : {
+            "x": { "name": "x", "value": 0 },
+            "y": { "name": "y", "value": 0 },
+            "z": { "name": "z", "value": 50 }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fePointLight"
+    },
+    "feSpotLight": {
+        "type" : "feSpotLight",
+        "shorthand": "light",
+        "attributes" : {
+            "x": { "name": "x", "value": 0 },
+            "y": { "name": "y", "value": 0 },
+            "z": { "name": "z", "value": 50 },
+            "pointsAtX": { "name": "pointsAtX", "value": 50 },
+            "pointsAtY": { "name": "pointsAtY", "value": 50 },
+            "pointsAtZ": { "name": "pointsAtZ", "value": 0 },
+            "specularExponent": { "name": "specularExponent", "value": 1 },
+            "limitingConeAngle": { "name": "limitingConeAngle", "value": 30 }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpotLight"
+    },
+    "feMergeNode": {
+        "type": "feMergeNode",
+        "shorthand": "merge",
+        "attributes": {
+            "in": { "name": "in" }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMergeNode"
+    },
+    "feFuncR": {
+        "type" : "feFuncR",
+        "shorthand": "funcR",
+        "attributes" : {
+            "type": { "name": "type", "value": "identity" },
+            "tableValues": { "name": "tableValues", "value": null },
+            "slope": { "name": "slope", "value": null },
+            "intercept": { "name": "intercept", "value": null },
+            "amplitude": { "name": "amplitude", "value": null },
+            "exponent": { "name": "exponent", "value": null },
+            "offset": { "name": "offset", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR"
+    },
+    "feFuncG": {
+        "type" : "feFuncG",
+        "shorthand": "funcG",
+        "attributes" : {
+            "type": { "name": "type", "value": "identity" },
+            "tableValues": { "name": "tableValues", "value": null },
+            "slope": { "name": "slope", "value": null },
+            "intercept": { "name": "intercept", "value": null },
+            "amplitude": { "name": "amplitude", "value": null },
+            "exponent": { "name": "exponent", "value": null },
+            "offset": { "name": "offset", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG"
+    },
+    "feFuncB": {
+        "type" : "feFuncB",
+        "shorthand": "funcB",
+        "attributes" : {
+            "type": { "name": "type", "value": "identity" },
+            "tableValues": { "name": "tableValues", "value": null },
+            "slope": { "name": "slope", "value": null },
+            "intercept": { "name": "intercept", "value": null },
+            "amplitude": { "name": "amplitude", "value": null },
+            "exponent": { "name": "exponent", "value": null },
+            "offset": { "name": "offset", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB"
+    },
+    "feFuncA": {
+        "type" : "feFuncA",
+        "shorthand": "funcA",
+        "attributes" : {
+            "type": { "name": "type", "value": "identity" },
+            "tableValues": { "name": "tableValues", "value": null },
+            "slope": { "name": "slope", "value": null },
+            "intercept": { "name": "intercept", "value": null },
+            "amplitude": { "name": "amplitude", "value": null },
+            "exponent": { "name": "exponent", "value": null },
+            "offset": { "name": "offset", "value": null }
+        },
+        "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA"
+    }
+}

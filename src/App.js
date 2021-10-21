@@ -15,7 +15,7 @@ function App() {
       </header>
       <FilterEditor />
       <footer className="app--footer">
-        <p> — Project Github:  — </p>
+        <p> — Project Github: <a href="https://github.com/bluesatin/SVG-Filter-Builder">SVG-Filter-Builder</a> — </p>
       </footer>
     </div>
   );

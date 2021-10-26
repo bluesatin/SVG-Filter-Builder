@@ -3,10 +3,9 @@
 ## [Planned Features]
 + Add ability to edit base filter element attributes
     + e.g. filter id, x/y, width/height etc.
-+ Add support for different SVG-Preview presets
-    + e.g. full background, circle in center, text etc.
-+ Add support for SVG element presets
++ Add support for filter presets
     + e.g. sharpen filter, desaturate filter etc.
++ Add support for dragging images/SVGs onto the preview to add to the preview
 + Add support for editing the SVG code
 + Add extra features for grid type inputs
     + Select multiple boxes to change simultaneously (using refs?)
@@ -14,6 +13,8 @@
 + Add help hints for certain elements, fields etc.
 
 ## [Unreleased]
+### Added
++ Support for different SVG-Preview presets (e.g. solid, circle, text etc.)
 
 ## [0.1.0] - 2021_10_21
 ### Added

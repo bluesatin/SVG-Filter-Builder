@@ -3,10 +3,12 @@
 // ╘═══════════╛
 import React from "react";
 import ReactDOMServer from "react-dom/server";
+import XMLViewer from "react-xml-viewer";
+import parse from "html-react-parser";
 import * as InputFields from "components/InputFields";
 import * as ElementForms from "components/ElementForms";
-import svgElements from "data/svg-elements";
-import XMLViewer from "react-xml-viewer";
+import svgElements from "data/svg-elements.json";
+import svgPreviewPresets from "data/svg-preview-presets.json";
 // ┌────────────────┐
 // │  FilterEditor  │
 // ╘════════════════╛
@@ -192,16 +194,47 @@ class FilterPreview extends React.Component {
   // DefaultProps
   static defaultProps = {};
   // State
-  state = {};
+  state = {
+    "previewPreset": {
+        "name": "GreyBackground",
+        "label": "Grey Background",
+        "desc": "",
+        "element": "<rect x=\"0%\" y=\"0%\" width=\"100%\" height=\"100%\" fill=\"#808080\"/>",
+    },
+    "previewElement": <rect x="0%" y="0%" width="100%" height="100%" fill="#808080"/>,
+  };
+  // Property - previewPresets
+  previewPresets = JSON.parse(JSON.stringify(svgPreviewPresets));
+  // Handler - handleNewElementTypeChange
+  handlePreviewPresetChange = (value, fieldName) => {
+    // If switching to blank preset, set to blank
+    if (value === "") { this.setState({ "previewPreset": { "name": null, "label": null, 
+                                                           "desc": null, "element": null },
+                                        "previewElement": null });
+                        return; }
+    // Retrieve matching preset
+    const newPreset = {...this.previewPresets.find(preset => preset.name === value)};
+    newPreset.element = newPreset?.element ? parse(newPreset?.element) : null;
+    // Update state
+    this.setState({ "previewPreset": newPreset,
+                    "previewElement": newPreset?.element });
+  }
   // Render
   render() {
     // Generate preview SVG
     const previewSVG = <SVGPreview elements={this.props.elements}
-                                   previewPreset={this.state.previewPreset} />;
+                                   previewElement={this.state.previewElement} />;
     // Return
     return(
       <div className="main--preview">
-        <h2 className="preview--title">Filter Preview</h2>
+        <div className="preview--form">
+          <h2 className="preview--title">Filter Preview</h2>
+          <InputFields.ListInput name="previewPreset"
+                                 label={false}
+                                 value={this.state.previewPreset?.name}
+                                 options={this.previewPresets.map(preset => [preset.name, preset.label])}
+                                 onChange={this.handlePreviewPresetChange} />
+        </div>
         <div className="preview--svg">
           {previewSVG}
         </div>
@@ -217,9 +250,7 @@ class FilterPreview extends React.Component {
 // ╘══════════════╛
 class SVGPreview extends React.Component {
   // DefaultProps
-  static defaultProps = {
-    "previewPreset": "Solid Background",
-  };
+  static defaultProps = {};
   // Components - FilterElements
   get FilterElements() {
     // For each element in filter, generate it
@@ -258,24 +289,10 @@ class SVGPreview extends React.Component {
       return (React.createElement(element.type, elementProps, childElements));
     }
   }
-  // Components - filteredElement
-  get FilteredElement() {
-    // Map of elements by previewPreset names
-    const elementMap = {
-      "Solid Background": <rect x="0%" y="0%" width="100%" height="100%" fill="#808080" />,
-      "Centered Circle": <circle cx="50%" cy="50%" r="33%" fill="#404040" />,
-      "Lorem Ipsum": <text x="50%" y="50%"
-                           textAnchor="middle" textLength="90%"
-                           fontFamily="serif" fill="#202020"
-                           fontSize="72" fontWeight="900">Lorem Ipsum</text>,
-    }
-    // Match element to previewPreset
-    const FilteredElement = elementMap?.[this.props.previewPreset];
-    // Return
-    return FilteredElement;
-  }
   // Render
   render() {
+    // Generate filter-elements
+    const filterElements = this.FilterElements;
     // Return
     return(
       <React.Fragment>
@@ -284,12 +301,12 @@ class SVGPreview extends React.Component {
           <defs>
             {/* Filter */}
             <filter id="new-filter" x="-10%" y="-10%" width="120%" height="120%">
-              { this.FilterElements }
+              { filterElements }
             </filter>
           </defs>
           {/* Object to Filter */}
-          <g filter={this.FilterElements.length > 0 ? "url(#new-filter)" : ""}>
-            { this.FilteredElement }
+          <g filter={filterElements.length > 0 ? "url(#new-filter)" : null}>
+            { this.props.previewElement }
           </g>
         </svg>
       </React.Fragment>

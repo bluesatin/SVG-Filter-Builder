@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/SVG-Filter-Builder/static/css/main.2111b672.chunk.css",
-    "main.js": "/SVG-Filter-Builder/static/js/main.f4c2cd02.chunk.js",
-    "main.js.map": "/SVG-Filter-Builder/static/js/main.f4c2cd02.chunk.js.map",
-    "runtime-main.js": "/SVG-Filter-Builder/static/js/runtime-main.d01c5979.js",
-    "runtime-main.js.map": "/SVG-Filter-Builder/static/js/runtime-main.d01c5979.js.map",
-    "static/js/2.f86dc8af.chunk.js": "/SVG-Filter-Builder/static/js/2.f86dc8af.chunk.js",
-    "static/js/2.f86dc8af.chunk.js.map": "/SVG-Filter-Builder/static/js/2.f86dc8af.chunk.js.map",
-    "static/js/3.80add3ff.chunk.js": "/SVG-Filter-Builder/static/js/3.80add3ff.chunk.js",
-    "static/js/3.80add3ff.chunk.js.map": "/SVG-Filter-Builder/static/js/3.80add3ff.chunk.js.map",
+    "main.css": "/SVG-Filter-Builder/static/css/main.dce394e1.chunk.css",
+    "main.js": "/SVG-Filter-Builder/static/js/main.1d6225c1.chunk.js",
+    "main.js.map": "/SVG-Filter-Builder/static/js/main.1d6225c1.chunk.js.map",
+    "runtime-main.js": "/SVG-Filter-Builder/static/js/runtime-main.c1402136.js",
+    "runtime-main.js.map": "/SVG-Filter-Builder/static/js/runtime-main.c1402136.js.map",
+    "static/js/2.7b2c614e.chunk.js": "/SVG-Filter-Builder/static/js/2.7b2c614e.chunk.js",
+    "static/js/2.7b2c614e.chunk.js.map": "/SVG-Filter-Builder/static/js/2.7b2c614e.chunk.js.map",
+    "static/js/3.1094e91b.chunk.js": "/SVG-Filter-Builder/static/js/3.1094e91b.chunk.js",
+    "static/js/3.1094e91b.chunk.js.map": "/SVG-Filter-Builder/static/js/3.1094e91b.chunk.js.map",
     "index.html": "/SVG-Filter-Builder/index.html",
-    "static/css/main.2111b672.chunk.css.map": "/SVG-Filter-Builder/static/css/main.2111b672.chunk.css.map",
-    "static/js/2.f86dc8af.chunk.js.LICENSE.txt": "/SVG-Filter-Builder/static/js/2.f86dc8af.chunk.js.LICENSE.txt",
+    "static/css/main.dce394e1.chunk.css.map": "/SVG-Filter-Builder/static/css/main.dce394e1.chunk.css.map",
+    "static/js/2.7b2c614e.chunk.js.LICENSE.txt": "/SVG-Filter-Builder/static/js/2.7b2c614e.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/SVG-Filter-Builder/static/media/fa-solid-900.efbd5d20.eot"
   },
   "entrypoints": [
-    "static/js/runtime-main.d01c5979.js",
-    "static/js/2.f86dc8af.chunk.js",
-    "static/css/main.2111b672.chunk.css",
-    "static/js/main.f4c2cd02.chunk.js"
+    "static/js/runtime-main.c1402136.js",
+    "static/js/2.7b2c614e.chunk.js",
+    "static/css/main.dce394e1.chunk.css",
+    "static/js/main.1d6225c1.chunk.js"
   ]
 }
